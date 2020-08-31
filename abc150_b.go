@@ -2,23 +2,26 @@ package main
 
 import (
     "fmt"
-    "strings"
 )
 
 func main() {
-    var n int = 1
-  //  fmt.Scan(&n)
-    var s string = "test"
-  //  fmt.Scan(&s)
+    var n int
+    fmt.Scan(&n)
+    var s string
+    fmt.Scan(&s)
 
     var result string = "ABC"
 
-    var slice = strings.Split(s, "")
-    fmt.Print(slice)
+//    var slice = strings.Split(s, "")
 
-    for i := 0; i < n; i++  {
-        fmt.Println(slice[i:i+3])
+    var j int = 0
+    for i := 0; i < n-3; i++  {
+        var char string = s[i:i+3]
+        if char == result {
+            j++
+        }
     }
+    fmt.Println(j)
 
 }
 
