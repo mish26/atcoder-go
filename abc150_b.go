@@ -12,10 +12,8 @@ func main() {
 
     var result string = "ABC"
 
-//    var slice = strings.Split(s, "")
-
     var j int = 0
-    for i := 0; i < n-3; i++  {
+    for i := 0; i <= n-3; i++  {
         var char string = s[i:i+3]
         if char == result {
             j++
